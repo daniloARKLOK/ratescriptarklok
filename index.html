@@ -1750,7 +1750,7 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
 	    // Texto 5 (vermelho e negrito)
 	    const texto5 = "ESTE DOCUMENTO É PROPRIEDADE DA ARKLOK, TODOS OS DIREITOS SÃO RESERVADOS.";
 	    doc.setFontSize(8);
-        doc.setFont(undefined, 'normal');
+        doc.setFont(undefined, 'bold');
         doc.setTextColor(200, 0, 0); // vermelho
 	    const larguraTexto5 = doc.getTextWidth(texto5);
 	    doc.text(texto5, (larguraPagina - larguraTexto5) / 2, yRodape + 18);
@@ -1772,6 +1772,7 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
 </body>
 
 </html>
+
 
 
 
