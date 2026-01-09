@@ -1719,7 +1719,6 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
             const larguraPagina = 210;
             let yRodape = 265; // posição perto do final da página A4 (297mm)
 
-	    
             // Texto 1
             const texto1 = "ATENDIMENTO À LGPD: AO INSERIR SEUS DADOS ACIMA, VOCÊ ESTARÁ DE ACORDO COM A UTILIZAÇÃO DE SUAS INFORMAÇÕES";
             const larguraTexto1 = doc.getTextWidth(texto1);
@@ -1743,6 +1742,14 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
             const larguraTexto4 = doc.getTextWidth(texto4);
             doc.text(texto4, (larguraPagina - larguraTexto4) / 2, yRodape + 13);
 
+	    // Texto 5 - Aviso de retirada
+	    doc.setFontSize(7);
+	    doc.setFont(undefined, 'bold');
+	    const texto5 = "Este técnico ARKLOK não está autorizado a realizar a retirada de equipamentos ou periféricos.";
+	    const larguraTexto5 = doc.getTextWidth(texto5);
+	    doc.text(texto5, (larguraPagina - larguraTexto5) / 2, yRodape + 18);
+
+
             // Resetar cor para evitar afetar o restante
             doc.setTextColor(0, 0, 0);
             doc.setFont(undefined, 'normal');
@@ -1759,8 +1766,3 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
 </body>
 
 </html>
-
-
-
-
-
