@@ -1721,8 +1721,9 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
 
             // Texto 1
             const texto1 = "ESTE TÉCNICO ARKLOK NÃO ESTÁ AUTORIZADO A REALIZAR A RETIRADA DE EQUIPAMENTOS OU PERIFÉRICOS.";
-	    doc.setFont(undefined, 'bold');
-	    doc.setTextColor(200, 0, 0); // vermelho
+	    	doc.setFontSize(8)
+			doc.setFont(undefined, 'bold');
+	    	doc.setTextColor(200, 0, 0); // vermelho
             const larguraTexto1 = doc.getTextWidth(texto1);
             doc.text(texto1, (larguraPagina - larguraTexto1) / 2, yRodape);
 
@@ -1748,8 +1749,8 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
 	    // Texto 5 (vermelho e negrito)
 	    const texto5 = "ESTE DOCUMENTO É PROPRIEDADE DA ARKLOK, TODOS OS DIREITOS SÃO RESERVADOS.";
 	    doc.setFontSize(8);
-            doc.setFont(undefined, 'normal');
-            doc.setTextColor(200, 0, 0); // vermelho
+        doc.setFont(undefined, 'normal');
+        doc.setTextColor(200, 0, 0); // vermelho
 	    const larguraTexto5 = doc.getTextWidth(texto5);
 	    doc.text(texto5, (larguraPagina - larguraTexto5) / 2, yRodape + 18);
 
@@ -1770,6 +1771,7 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
 </body>
 
 </html>
+
 
 
 
