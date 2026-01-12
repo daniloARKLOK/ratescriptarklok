@@ -277,7 +277,7 @@
 
         <!-- esse campo empresa parceira está oculto no formulário -->
         <label for="empresa">EMPRESA PARCEIRA:</label>
-	<input type="text" id="empresa" name="empresa" placeholder="Digite o nome da empresa">
+<input type="text" id="empresa" name="empresa" placeholder="Digite o nome da empresa">
 
         <label for="data">DATA DO ATENDIMENTO:</label>
         <input type="date" id="data" name="data" required>
@@ -523,11 +523,6 @@
 
 
 
-
-
-
-
-
         <!-- botão gerar DPF  -->
         <h4>O arquivo PDF gerado será salvo nos seus downloads</h4>
         <button type="button" id="btnPDF">Gerar PDF</button>
@@ -602,8 +597,8 @@
             // Coleta de dados dos campos
             const tecnico = document.getElementById("tecnico")?.value || "";
             const parceiro = document.getElementById("empresa")?.value || "";
-	    	const kminicial = document.getElementById("kminicial")?.value || "";
-	    	const kmfinal = document.getElementById("kmfinal")?.value || "";
+	    const kminicial = document.getElementById("kminicial")?.value || "";
+	    const kmfinal = document.getElementById("kmfinal")?.value || "";
             const cliente = document.getElementById("razao_social")?.value || "";
             const chamado = document.getElementById("chamado")?.value || "";
             const inicio = document.getElementById("inicio")?.value || "";
@@ -1756,8 +1751,8 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
 	    // Texto 5 (vermelho e negrito)
 	    const texto5 = "ESTE DOCUMENTO É PROPRIEDADE DA ARKLOK, TODOS OS DIREITOS SÃO RESERVADOS.";
 	    doc.setFontSize(8);
-        doc.setFont(undefined, 'bold');
-        doc.setTextColor(200, 0, 0); // vermelho
+            doc.setFont(undefined, 'bold');
+            doc.setTextColor(200, 0, 0); // vermelho
 	    const larguraTexto5 = doc.getTextWidth(texto5);
 	    doc.text(texto5, (larguraPagina - larguraTexto5) / 2, yRodape + 18);
 
@@ -1778,12 +1773,3 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
