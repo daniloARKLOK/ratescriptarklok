@@ -271,11 +271,13 @@
 
         <!-- esse campo empresa parceira está oculto no formulário -->
         <label for="empresa">EMPRESA PARCEIRA:</label>
-<input type="text" id="empresa" name="empresa" placeholder="Digite o nome da empresa">
+	<input type="text" id="empresa" name="empresa" placeholder="Digite o nome da empresa">
 
+	<label for="kminicial">KM INICIAL: (SE HOUVER)</label>
+        <input type="text" id="kminicial" name="kminicial" required>
 
-
-
+        <label for="kmfinal">KM FINAL: (SE HOUVER)</label>
+	<input type="text" id="kmfinal" name="kmfinal" required>
 
         <label for="data">DATA DO ATENDIMENTO:</label>
         <input type="date" id="data" name="data" required>
@@ -600,6 +602,8 @@
             // Coleta de dados dos campos
             const tecnico = document.getElementById("tecnico")?.value || "";
             const parceiro = document.getElementById("empresa")?.value || "";
+	    const kminicial = document.getElementById("kminicial")?.value || "";
+	    const kmfinal = document.getElementById("kmfinal")?.value || "";
             const cliente = document.getElementById("razao_social")?.value || "";
             const chamado = document.getElementById("chamado")?.value || "";
             const inicio = document.getElementById("inicio")?.value || "";
@@ -619,6 +623,8 @@ SCRIPT DE FECHAMENTO
 
 TÉCNICO: ${tecnico}
 PARCEIRO: ${parceiro}
+KM INICIAL: ${kminicial}
+KM FINAL:${kmfinal}
 CLIENTE: ${cliente}
 CHAMADO: ${chamado}
 INÍCIO DA ATIVIDADE: ${inicio}
