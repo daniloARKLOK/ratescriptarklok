@@ -259,6 +259,9 @@
         <label for="chamado">N° DO CHAMADO:</label>
         <input type="text" id="chamado" name="chamado" required>
 
+		<label for="endereco">ENDEREÇO DO CHAMADO:</label>
+        <input type="text" id="endereco" name="endereco" required>
+		
         <label for="cidade">CIDADE DO CHAMADO:</label>
         <input type="text" id="cidade" name="cidade" required>
 
@@ -605,6 +608,7 @@
 	    	const kminicial = document.getElementById("kminicial")?.value || "";
 	    	const kmfinal = document.getElementById("kmfinal")?.value || "";
             const cliente = document.getElementById("razao_social")?.value || "";
+			const endereco = document.getElementById("endereco")?.value || "";
             const chamado = document.getElementById("chamado")?.value || "";
 			const data = document.getElementById("data")?.value || "";
             const inicio = document.getElementById("inicio")?.value || "";
@@ -627,6 +631,7 @@ PARCEIRO: ${parceiro}
 KM INICIAL: ${kminicial}
 KM FINAL: ${kmfinal}
 CLIENTE: ${cliente}
+ENDEREÇO: ${endereco}
 CHAMADO: ${chamado}
 DATA DO ATENDIMENTO: ${data}
 INÍCIO DA ATIVIDADE: ${inicio}
@@ -1779,6 +1784,7 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
 </body>
 
 </html>
+
 
 
 
