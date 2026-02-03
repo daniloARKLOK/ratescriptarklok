@@ -323,7 +323,7 @@
                 RETIRADO PARA LABORATÓRIO:
                 <select name="retirado_lab">
                     <option value="">--</option>
-                    <option value="N">NÃO</option>
+                    <option value="NÃO">NÃO</option>
                 </select>
             </label>
 
@@ -1111,7 +1111,7 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
                 const linha1Y = y + 4;
 
                 const itensLinha1 = [
-                    { label: `RETIRADO PARA LABORATÓRIO S/N: ${form.retirado_lab.value || ""}`, checked: null },
+                    { label: `RETIRADO PARA LABORATÓRIO: ${form.retirado_lab.value || ""}`, checked: null },
                     { label: "SUBSTITUIÇÃO OU TROCA:", checked: form.substituicao_troca.checked },
                     { label: "UPGRADE (ATUALIZAÇÃO SSD, MEMÓRIA):", checked: form.upgrade.checked }
                 ];
@@ -1783,6 +1783,7 @@ NOME DE QUEM ACOMPANHOU A ATIVIDADE: ${acompanhante}
 </body>
 
 </html>
+
 
 
 
